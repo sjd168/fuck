@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".AndroidTaskStackActivity"
+	>
+	
+	<TextView
+		android:id="@+id/tvClassName"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20dp"
+		android:text="className"
+		android:textSize="20sp"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		/>
+	
+	<LinearLayout
+		android:id="@+id/ll_mode"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="20dp"
+		android:gravity="center"
+		android:orientation="vertical"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		>
+
+		<Button
+			android:id="@+id/standard"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="standard"
+			/>
+		
+		<Button
+			android:id="@+id/singleTop"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="singleTop"
+			/>
+		
+		<Button
+			android:id="@+id/singleTask"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="singleTask"
+			/>
+		
+		<Button
+			android:id="@+id/singleInstance"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="singleInstance"
+			/>
+	
+	</LinearLayout>
+	
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginRight="20dp"
+		android:orientation="vertical"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintTop_toTopOf="@id/ll_mode"
+		>
+		
+		<Button
+			android:id="@+id/clearTop"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="clear top"
+			/>
+		
+		<Button
+			android:id="@+id/newTask"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="new task"
+			/>
+		
+		<Button
+			android:id="@+id/clearTask"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="clear task"
+			/>
+		
+		<Button
+			android:id="@+id/mulTask"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="mul task"
+			/>
+		
+		<Button
+			android:id="@+id/noHistory"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="No History"
+			/>
+	</LinearLayout>
+	
+	<Button
+		android:id="@+id/launch"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="20dp"
+		android:text="启动"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+		/>
+</android.support.constraint.ConstraintLayout>
